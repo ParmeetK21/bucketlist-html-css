@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <script src="https://kit.fontawesome.com/3d77984c67.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="no-border">
+            <img src="./images/bucket_list2.png" alt="Bucket_list_logo" height="300" class="bucket_logo">
+            <h1>Create Your Account</h1>
+        </div>
+    </header>
+    <main>
+        <div class="create-info">
+            <form method="post" >
+                <div>
+                    <label for="username">Username:</label>
+                    <input id="username" type="text" name="username" required/>
+                </div>
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input id="name" type="text" name="name" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]"
+                    title="firstname lastname" required/>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email" required/>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input id="password" type="text" name="password" required/>
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password:</label>
+                    <input id="confirm_password" type="text" name="confirm_password" required/>
+                </div>
+                <div>
+                    <button type="submit" name="submit" id="submit">Create Account</button>
+                </div>
+            </form>
+        </div> 
+    </main>   
+    
+
+    <nav class="login-nav">
+        <div>
+          <a href="./login.html"> > Login</a>
+        </div>
+      </nav>
+<footer>
+   
+    &copy; - Parmeet Kaur</footer>
+</body>
+</html>

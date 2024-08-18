@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to List</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/3d77984c67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="border">
+        <div class="top_page">
+            <img src="./images/bucket_list2.png" alt="Bucket_list_logo" height="100" class="bucket_logo">
+            <h1>Living My Bucket List</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Explore</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>            
+                        </li>
+                        <li><a href="./search.html"><i class="fa-solid fa-magnifying-glass fa-xs"></i>Search</a></li>
+                        <li><a href="./add-item.html"><i class="fa-regular fa-plus"></i>Add to My-List</a></li>
+                        <li><a href="./list.html"><i class="fa-solid fa-check"></i>My Public List</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Join</a>
+                    <ul class="submenu">
+                        <li><a href="./create-account.html"><i class="fa-solid fa-user-plus"></i>Create Account</a></li>
+                    <li><a href="./login.html"><i class="fa-solid fa-user"></i>Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>   
+    </header>  
+    <main>
+        <div class="item-form">
+            <form method="post">
+                <section>
+                    <h3>Add New Item</h3>
+                <div class="title_box">
+                    <label for="title">Title:</label>
+                    <input id="title" type="text" name="title"/>
+                </div>
+
+                <fieldset class="choice">
+                    <legend class="category">Category :</legend>
+                    
+                    <div>
+                        <label for="nature">Nature</label>
+                        <input type="checkbox" name="options" id="nature" value="Nature" />
+                    </div>
+                    <div>
+                        <label for="travel">Travel</label>
+                        <input type="checkbox" name="options" id="travel" value="Travel" />
+                    </div>
+                    <div>
+                        <label for="adventure">Adventure</label>
+                        <input type="checkbox" name="options" id="adventure" value="Adventure" />
+                    </div>
+                    <div>
+                        <label for="food/drink">Food/Drink</label>
+                        <input type="checkbox" name="options" id="food/drink" value="Food/Drink" />
+                    </div>
+                    <div>
+                        <label for="entertainment">Entertainment</label>
+                        <input type="checkbox" name="options" id="entertainment" value="Entertainment" />
+                    </div>
+                    <div>
+                        <label for="personal">Personal</label>
+                        <input type="checkbox" name="options" id="personal" value="Personal" />
+                    </div>
+                    <div>
+                        <label for="other">Other:</label>
+                        <input type="checkbox" name="options" id="other" value="Other" />
+                    </div>
+                </fieldset>
+                <div class="textarea_container">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" cols="80" rows="10" placeholder="Enter a description of the item..."></textarea>
+                </div>
+                <div>
+                    <button type="submit" name="submit" id="submit">Add to List</button>
+                </div> 
+                </section>
+            </form>
+
+        </div> 
+    </main> 
+    <footer>&copy; - Parmeet Kaur</footer>
+</body>
+</html>
